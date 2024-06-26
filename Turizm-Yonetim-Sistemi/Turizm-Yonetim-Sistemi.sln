@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turizm-Yonetim-Sistemi", "Turizm-Yonetim-Sistemi\Turizm-Yonetim-Sistemi.csproj", "{CD06A4F4-1235-48EB-B19B-FA6A4B148C15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turizm-Yonetim-Sistemi", "Turizm-Yonetim-Sistemi\Turizm-Yonetim-Sistemi.csproj", "{CD06A4F4-1235-48EB-B19B-FA6A4B148C15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{5E05E384-48B4-4E38-A5D8-1B7E65C2B562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turizm-Yonetim-Sistemi.EntityLayer", "Turizm-Yonetim-Sistemi.EntityLayer\Turizm-Yonetim-Sistemi.EntityLayer.csproj", "{FD20FB99-36CB-4C70-A6A7-FB25826B6E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turizm-Yonetim-Sistemi.DataAccessLayer", "Turizm-Yonetim-Sistemi.DataAccessLayer\Turizm-Yonetim-Sistemi.DataAccessLayer.csproj", "{4C8416D0-C8AD-4988-9F43-EF6B27BF73A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turizm-Yonetim-Sistemi.BusinessLayer", "Turizm-Yonetim-Sistemi.BusinessLayer\Turizm-Yonetim-Sistemi.BusinessLayer.csproj", "{3B24968F-9886-4791-9D0D-002763BB485E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{CD06A4F4-1235-48EB-B19B-FA6A4B148C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD06A4F4-1235-48EB-B19B-FA6A4B148C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD06A4F4-1235-48EB-B19B-FA6A4B148C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E05E384-48B4-4E38-A5D8-1B7E65C2B562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E05E384-48B4-4E38-A5D8-1B7E65C2B562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E05E384-48B4-4E38-A5D8-1B7E65C2B562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E05E384-48B4-4E38-A5D8-1B7E65C2B562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD20FB99-36CB-4C70-A6A7-FB25826B6E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD20FB99-36CB-4C70-A6A7-FB25826B6E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD20FB99-36CB-4C70-A6A7-FB25826B6E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD20FB99-36CB-4C70-A6A7-FB25826B6E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8416D0-C8AD-4988-9F43-EF6B27BF73A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8416D0-C8AD-4988-9F43-EF6B27BF73A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8416D0-C8AD-4988-9F43-EF6B27BF73A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8416D0-C8AD-4988-9F43-EF6B27BF73A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B24968F-9886-4791-9D0D-002763BB485E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B24968F-9886-4791-9D0D-002763BB485E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B24968F-9886-4791-9D0D-002763BB485E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B24968F-9886-4791-9D0D-002763BB485E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
