@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
 {
-    public class Muavin : IStaff
+    public class Muavin : IStaff, IEntity
     {
         public int PersonelID { get; set; }
         public string Ad { get; set; }
