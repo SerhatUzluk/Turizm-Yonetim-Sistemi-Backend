@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
 {
-    public class Musteri : IUser
+    public class Musteri : IUser, IEntity
     {
         public int UserID { get; set; }
         public string Name { get; set; }
