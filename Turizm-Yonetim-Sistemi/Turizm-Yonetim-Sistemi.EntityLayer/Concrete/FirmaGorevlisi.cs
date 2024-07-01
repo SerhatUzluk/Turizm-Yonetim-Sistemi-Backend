@@ -1,6 +1,8 @@
 ﻿using Core.Entity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,14 +11,26 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
 {
     public class FirmaGorevlisi : IUser, IEntity
     {
-        public int UserID { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string MailAdress { get; set; }
-        public string Password { get; set; }
+        [Key]
+        [Required]
+        public int KullaniciID { get; set; }
+        [Required]
+        public string Ad { get; set; }
+        [Required]
+        public string Soyad { get; set; }
+        [Required]
+        public string MailAdres { get; set; }
+        [Required]
+        public string Sifre { get; set; }
+        [Required]
         public int RoleID { get; set; }
-        public string PhoneNumber { get; set; }
+        [Required]
+        public string TelefonNumarasi { get; set; }
+        [Required]
         public int FirmaID { get; set; }
+        [ForeignKey("FirmaID")]
+        public Firma firma { get; set; }
+        [Required]
         public string Unvan { get; set; }
     }
 
