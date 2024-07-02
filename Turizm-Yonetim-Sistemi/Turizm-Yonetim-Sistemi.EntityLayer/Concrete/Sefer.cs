@@ -18,10 +18,9 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
         public int TasitID { get; set; }
         [InverseProperty("Bilet")]
         List<Bilet> Biletler { get; set; }
-        [InverseProperty("Sofor")]
-        List<Sofor> SeferSoforleri { get; set; }
-        [InverseProperty("Muavin")]
-        List<Muavin> SeferMuavinleri { get; set; }
+        [InverseProperty("Personel")]
+        List<Personel> SeferPersonelleri { get; set; }        
+        
         [ForeignKey("TasitID")]
         public Tasit Tasit { get; set; }
         [Required]

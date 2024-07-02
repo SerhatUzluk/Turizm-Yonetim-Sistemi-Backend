@@ -1,15 +1,15 @@
 ﻿using Core.Entity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
 {
-    public class Sofor : IStaff, IEntity
+    public class Personel : IEntity
     {
         [Key]
         [Required]

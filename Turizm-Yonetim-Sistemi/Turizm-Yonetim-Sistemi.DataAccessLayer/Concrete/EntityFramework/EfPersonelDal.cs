@@ -9,7 +9,7 @@ using Turizm_Yonetim_Sistemi.EntityLayer.Concrete;
 
 namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Concrete.EntityFramework
 {
-    public class EfSoforDal: EfEntityRepositoryBase<Sofor, DemoContext>, ISoforDal
+    public class EfPersonelDal: EfEntityRepositoryBase<Personel, DemoContext>, IPersonelDal
     {
     }
 }

@@ -22,4 +22,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Turizm-Yonetim-Sistemi.BusinessLayer\Turizm-Yonetim-Sistemi.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Turizm-Yonetim-Sistemi.DataAccessLayer\Turizm-Yonetim-Sistemi.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\Turizm-Yonetim-Sistemi.EntityLayer\Turizm-Yonetim-Sistemi.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>

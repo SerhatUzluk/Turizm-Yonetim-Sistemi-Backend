@@ -7,7 +7,7 @@ using Turizm_Yonetim_Sistemi.EntityLayer.Concrete;
 
 namespace Turizm_Yonetim_Sistemi.BusinessLayer.Abstract
 {
-    public interface IMuavinService : IGenericService<Muavin>
+    public interface IPersonelService: IGenericService<Personel>
     {
     }
 }

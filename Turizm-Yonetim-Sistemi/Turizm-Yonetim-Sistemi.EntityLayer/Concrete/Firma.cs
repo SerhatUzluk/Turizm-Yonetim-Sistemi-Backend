@@ -23,10 +23,8 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
         public string TelefonNumarasi { get; set; }
         [Required]
         public string FirmaAdi { get; set; }
-        [InverseProperty("Sofor")]
-        List<Sofor> Soforler { get; set; }
-        [InverseProperty("Muavin")]
-        List<Muavin> Muavinler { get; set; }
+        [InverseProperty("Personel")]
+        List<Personel> Personeller { get; set; }                
         [InverseProperty("Kampanya")]
         List<Kampanya> Kampanyalar { get; set; }
         [InverseProperty("Tasit")]

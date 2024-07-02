@@ -49,7 +49,7 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
         [Required]
         public int PersonelID { get; set; }
         [ForeignKey("PersonelID")]
-        public IStaff Personel { get; set; }
+        public Personel personel { get; set; }        
     }
 
 }
