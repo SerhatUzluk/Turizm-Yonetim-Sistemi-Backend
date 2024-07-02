@@ -25,10 +25,6 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
         [ForeignKey("FirmaID")]
         public Firma firma { get; set; }
         [Required]
-        public string TasitTuru { get; set; }
-        [InverseProperty("Sofor")]
-        List<Sofor> Soforler { get; set; }
-        [InverseProperty("Muavin")]
-        List<Muavin> Muavinler { get; set; }
+        public string TasitTuru { get; set; }       
     }
 }

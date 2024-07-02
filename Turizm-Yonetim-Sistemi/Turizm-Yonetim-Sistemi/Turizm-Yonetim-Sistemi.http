@@ -1,6 +1,6 @@
 @Turizm_Yonetim_Sistemi_HostAddress = http://localhost:5199
 
-GET {{Turizm_Yonetim_Sistemi_HostAddress}}/weatherforecast/
+GET {{Turizm_Yonetim_Sistemi_HostAddress}}/SMR/
 Accept: application/json
 
 ###
