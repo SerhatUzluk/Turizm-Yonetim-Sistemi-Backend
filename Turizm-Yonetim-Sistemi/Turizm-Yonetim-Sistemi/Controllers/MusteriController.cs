@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Turizm_Yonetim_Sistemi.BusinessLayer.Abstract;
 using Turizm_Yonetim_Sistemi.EntityLayer.Concrete;
@@ -6,7 +7,8 @@ using Turizm_Yonetim_Sistemi.EntityLayer.Concrete;
 namespace Turizm_Yonetim_Sistemi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]    
+    [Route("api/[controller]")]
+    [EnableCors("AllowSpecificOrigin")]
     public class MusteriController : ControllerBase
     {
         private readonly IMusteriService _musteriService;
