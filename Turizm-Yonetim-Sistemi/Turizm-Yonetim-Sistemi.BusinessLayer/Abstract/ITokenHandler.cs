@@ -10,6 +10,6 @@ namespace Turizm_Yonetim_Sistemi.BusinessLayer.Abstract
 {
     public interface ITokenHandler
     {
-        Token CreateToken(IdentityUser user);
+        Token CreateToken(IdentityUser<string> user);
     }
 }

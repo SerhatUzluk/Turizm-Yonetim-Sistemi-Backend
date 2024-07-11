@@ -11,17 +11,18 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
 {
     public class Musteri : IdentityUser<string>, IUser, IEntity
     {
+        public Musteri()
+        {
+            this.Id = Guid.NewGuid().ToString();
+        }
+
         [Key]
         [Required]
         public int KullaniciID { get; set; }
         [Required]
         public string Ad { get; set; }
         [Required]
-        public string Soyad { get; set; }        
-        [Required]
-        public string Sifre { get; set; }        
-        [Required]
-        public string TelefonNumarasi { get; set; }
+        public string Soyad { get; set; }                        
         [Required]
         public string Cinsiyet { get; set; }
         [Required]
