@@ -45,7 +45,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasIndex("SeferID");
 
-                    b.ToTable("Bilets");
+                    b.ToTable("Bilets", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Firma", b =>
@@ -74,7 +74,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasKey("FirmaID");
 
-                    b.ToTable("Firmas");
+                    b.ToTable("Firmas", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.FirmaGorevlisi", b =>
@@ -119,7 +119,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasIndex("FirmaID");
 
-                    b.ToTable("Gorevlis");
+                    b.ToTable("Gorevlis", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Kampanya", b =>
@@ -141,7 +141,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasIndex("FirmaID");
 
-                    b.ToTable("Kampanyas");
+                    b.ToTable("Kampanyas", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Musteri", b =>
@@ -185,7 +185,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasKey("KullaniciID");
 
-                    b.ToTable("Musteris");
+                    b.ToTable("Musteris", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Personel", b =>
@@ -219,7 +219,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasKey("PersonelID");
 
-                    b.ToTable("Personels");
+                    b.ToTable("Personels", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.RotaBilgisi", b =>
@@ -240,7 +240,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasKey("RotaID");
 
-                    b.ToTable("RotaBilgisis");
+                    b.ToTable("RotaBilgisis", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Sefer", b =>
@@ -278,7 +278,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasIndex("TasitID");
 
-                    b.ToTable("Sefers");
+                    b.ToTable("Sefers", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Tasit", b =>
@@ -310,7 +310,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasIndex("FirmaID");
 
-                    b.ToTable("Tasits");
+                    b.ToTable("Tasits", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Terminal", b =>
@@ -339,7 +339,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasKey("TerminalID");
 
-                    b.ToTable("Terminals");
+                    b.ToTable("Terminals", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Vardiya", b =>
@@ -405,7 +405,7 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Migrations
 
                     b.HasIndex("PersonelID");
 
-                    b.ToTable("Vardiyas");
+                    b.ToTable("Vardiyas", (string)null);
                 });
 
             modelBuilder.Entity("Turizm_Yonetim_Sistemi.EntityLayer.Concrete.Bilet", b =>

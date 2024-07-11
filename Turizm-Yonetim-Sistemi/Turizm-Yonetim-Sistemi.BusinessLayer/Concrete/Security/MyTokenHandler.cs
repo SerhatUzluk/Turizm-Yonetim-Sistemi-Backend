@@ -13,16 +13,16 @@ using Turizm_Yonetim_Sistemi.BusinessLayer.Abstract;
 
 namespace Turizm_Yonetim_Sistemi.BusinessLayer.Concrete.Security
 {
-    public class TokenHandler : ITokenHandler
+    public class MyTokenHandler : ITokenHandler
     {
         public readonly IConfiguration _configuration;
 
-        public TokenHandler(IConfiguration configuration)
+        public MyTokenHandler(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        public Token CreateToken(IdentityUser user)
+        public Token CreateToken(IdentityUser<string> user)
         {
             var key = Encoding.ASCII.GetBytes(_configuration["Jwt:SecurityKey"]);
 

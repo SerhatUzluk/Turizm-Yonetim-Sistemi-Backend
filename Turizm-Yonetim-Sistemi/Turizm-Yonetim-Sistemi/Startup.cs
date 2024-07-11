@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Turizm_Yonetim_Sistemi.BusinessLayer.Abstract;
 using Turizm_Yonetim_Sistemi.BusinessLayer.Concrete;
+using Turizm_Yonetim_Sistemi.BusinessLayer.Concrete.Security;
 using Turizm_Yonetim_Sistemi.DataAccessLayer.Abstract;
 using Turizm_Yonetim_Sistemi.DataAccessLayer.Concrete;
 using Turizm_Yonetim_Sistemi.DataAccessLayer.Concrete.EntityFramework;
@@ -27,7 +28,7 @@ namespace Turizm_Yonetim_Sistemi
             services.AddDbContext<ApplicationContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<Musteri, IdentityRole>()
             .AddEntityFrameworkStores<ApplicationContext>()
             .AddDefaultTokenProviders();
 
@@ -59,9 +60,10 @@ namespace Turizm_Yonetim_Sistemi
                         builder.WithOrigins("http://localhost:5173")
                                .AllowAnyMethod()
                                .AllowAnyHeader()
-                               .AllowCredentials(); // Eğer kimlik doğrulama bilgilerini paylaşmak istiyorsanız
+                               .AllowCredentials();
                     });
             });
+
 
             services.AddScoped<IMusteriDal, EfMusteriDal>();
             services.AddScoped<IPersonelDal, EfPersonelDal>();
@@ -72,6 +74,7 @@ namespace Turizm_Yonetim_Sistemi
             services.AddScoped<IPersonelService, PersonelManager>();
             services.AddScoped<IRotaBilgisiService, RotaBilgisiManager>();
             services.AddScoped<ISeferService, SeferManager>();
+            services.AddScoped<MyTokenHandler>();
             services.AddControllers();
 
             services.AddSwaggerGen();

@@ -18,11 +18,7 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
         [Required]
         public string Ad { get; set; }
         [Required]
-        public string Soyad { get; set; }        
-        [Required]
-        public string Sifre { get; set; }        
-        [Required]
-        public string TelefonNumarasi { get; set; }
+        public string Soyad { get; set; }                                
         [Required]
         public int FirmaID { get; set; }
         [ForeignKey("FirmaID")]
