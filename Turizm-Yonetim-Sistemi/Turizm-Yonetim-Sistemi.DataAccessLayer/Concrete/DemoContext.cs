@@ -16,10 +16,10 @@ namespace Turizm_Yonetim_Sistemi.DataAccessLayer.Concrete
         }
 
         public DbSet<Bilet> Biletler { get; set; }
-        public DbSet<Firma> Firmalar { get; set; }
+        public DbSet<Firma> Firmas { get; set; }
         public DbSet<Kampanya> Kampanyalar { get; set; }        
-        public DbSet<RotaBilgisi> RotaBilgileri { get; set; }
-        public DbSet<Sefer> Seferler { get; set; }
+        public DbSet<RotaBilgisi> RotaBilgisis { get; set; }
+        public DbSet<Sefer> Sefers   { get; set; }
         public DbSet<Personel> Personeller { get; set; }
         public DbSet<Tasit> Tasitlar { get; set; }
         public DbSet<Terminal> Terminaller { get; set; }

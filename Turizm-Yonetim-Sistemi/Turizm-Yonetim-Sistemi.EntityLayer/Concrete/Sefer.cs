@@ -33,7 +33,7 @@ namespace Turizm_Yonetim_Sistemi.EntityLayer.Concrete
         public decimal BiletSatisFiyati { get; set; }
         [Required]
         public int RotaID { get; set; }
-        [ForeignKey("RotaBilgisiID")]
+        [ForeignKey("RotaID")]
         public RotaBilgisi Rota { get; set; }
 
     }
