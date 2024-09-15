@@ -69,11 +69,15 @@ namespace Turizm_Yonetim_Sistemi
             services.AddScoped<IPersonelDal, EfPersonelDal>();
             services.AddScoped<IRotaBilgisiDal, EfRotaBilgisiDal>();
             services.AddScoped<ISeferDal, EfSeferDal>();
+            services.AddScoped<IFirmaDal, EfFirmaDal>();
+            services.AddScoped<ITasitDal, EfTasitDal>();
 
+            services.AddScoped<ITasitService, TasitManager>(); 
             services.AddScoped<IMusteriService, MusteriManager>();
             services.AddScoped<IPersonelService, PersonelManager>();
             services.AddScoped<IRotaBilgisiService, RotaBilgisiManager>();
             services.AddScoped<ISeferService, SeferManager>();
+            services.AddScoped<IFirmaService, FirmaManager>();
             services.AddScoped<MyTokenHandler>();
             services.AddControllers();
 
